@@ -1,0 +1,324 @@
+@import "utilities.css";
+* {
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 85%, 0 100%);
+}
+
+header .container {
+    max-width: 1152px;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+.branding h1 {
+    color: white;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.branding h1 span {
+    color: #3E00FF;
+    padding: 0 0.3rem;
+}
+
+header nav .left a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+
+header nav .left a:hover {
+    color: #3E00FF;
+    transition: all .8s ease;
+}
+
+header nav {
+    padding: 2rem 0 0 0;
+}
+
+header nav .branding {
+    margin-right: 3rem;
+}
+
+.brndimg {
+    width: 10px;
+}
+
+.hero {
+    padding: 0 0 3rem 0;
+}
+
+.hero .left img {
+    width: 550px;
+}
+
+.hero .right {
+    color: white;
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    color: #3E00FF;
+    margin-bottom: 0.6rem;
+}
+
+.hero .right p {
+    font-weight: 200;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+}
+
+section .container {
+    max-width: 1152px;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+section .left img {
+    width: 600px;
+}
+
+section .right p {
+    padding: 4px 0;
+    line-height: 1.3rem;
+    font-weight: 600;
+}
+
+.ctbtn {
+    padding: 1rem 0;
+}
+
+section .servic-heading {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+}
+
+section .servic-heading+p {
+    color: #808080;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 6.5rem;
+}
+
+section.services {
+    background-color: rgba(238, 235, 229, 0.932);
+}
+
+section.services .card-wrapper {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section.services .card-wrapper .card {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    padding-top: 5rem;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: all 0.9s ease;
+}
+
+section.services .card-wrapper .card img {
+    background-color: #59b4df;
+    border-radius: 20%;
+    padding: 2rem;
+    width: 7rem;
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.services .card-wrapper .card h2 {
+    font-weight: 450;
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+section.services .card-wrapper .card p {
+    font-family: 'lato'sans-serif;
+    color: grey;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+section.services .card-wrapper .card:hover {
+    background-color: black;
+}
+
+section.services .card-wrapper .card:hover h2 {
+    color: wheat;
+}
+
+section .calltoaction {
+    text-align: center;
+    padding-bottom: 10rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../images/camera.png);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 75%, 0 100%);
+}
+
+section .calltoaction h2 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section .calltoaction h3 {
+    color: white;
+    font-weight: 410;
+    margin-bottom: 1.5rem;
+}
+
+section .calltoaction a {
+    padding-bottom: 2.5rem;
+}
+
+.Gallery {
+    background-color: rgba(238, 235, 229, 0.932);
+    padding-bottom: 3rem;
+}
+
+.Gallery .card-wrapper {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1rem;
+}
+
+.Gallery .card-wrapper .card {
+    position: relative;
+    height: 250px;
+    transition: all 0.5s ease;
+}
+
+.Gallery .card-wrapper .card img {
+    height: 100%;
+    width: 100%;
+}
+
+.Gallery .card-wrapper .card .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(184, 211, 206, 0.411);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.Gallery .card-wrapper .card .overlay a {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    text-decoration-line: none;
+}
+
+.Gallery .card-wrapper .card:hover .overlay {
+    opacity: 1;
+}
+
+.Gallery .card-wrapper .card:hover {
+    transform: scale(1.15);
+}
+
+.contact-heading {
+    color: gray;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us .card {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    transition: all 0.5s ease;
+}
+
+.contact-us .card a {
+    text-decoration-line: none;
+    color: #3E00FF;
+}
+
+.contact-us .card:hover {
+    transform: scale(1.1);
+}
+
+.google-address {
+    padding: 2rem 0;
+}
+
+.Footer {
+    background-color: black;
+    padding: 0.9rem 0;
+    position: relative;
+}
+
+.copyright h2 {
+    color: gray;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+
+.copyright h2 a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-socials {
+    padding-left: 1rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.footer-socials a {
+    padding-right: 1.1rem;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 24px;
+}
+
+.madeby {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.madeby h3 {
+    color: gray;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.madeby h3 a {
+    text-decoration: none;
+    color: gray;
+}
